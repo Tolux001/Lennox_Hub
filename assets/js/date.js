@@ -8,6 +8,6 @@ emailLink.textContent = "[Email Protected]";
 pos.appendChild(emailLink);
 
 let dateTime = document.querySelector(".dateTime");
-let currentDate = new Date().getFullYear();
+let currentDate = new Date();
 
 dateTime.textContent = currentDate;
