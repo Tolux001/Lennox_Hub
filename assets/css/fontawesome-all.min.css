@@ -3,7 +3,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
-.fa-solid,
+.fab,
 .fad,
 .fal,
 .far,
@@ -109,7 +109,7 @@
 }
 
 .fa.fa-pull-left,
-.fa-solid.fa-pull-left,
+.fab.fa-pull-left,
 .fal.fa-pull-left,
 .far.fa-pull-left,
 .fas.fa-pull-left {
@@ -117,7 +117,7 @@
 }
 
 .fa.fa-pull-right,
-.fa-solid.fa-pull-right,
+.fab.fa-pull-right,
 .fal.fa-pull-right,
 .far.fa-pull-right,
 .fas.fa-pull-right {
@@ -6069,7 +6069,7 @@
     url(../webfonts/fa-brands-400.svg#fontawesome) format("svg");
 }
 
-.fa-solid {
+.fab {
   font-family: "Font Awesome 5 Brands";
 }
 
@@ -6086,7 +6086,7 @@
     url(../webfonts/fa-regular-400.svg#fontawesome) format("svg");
 }
 
-.fa-solid,
+.fab,
 .far {
   font-weight: 400;
 }
@@ -6096,12 +6096,12 @@
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url(../webfonts/fa-solid-900.eot);
-  src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
-    url(../webfonts/fa-solid-900.woff2) format("woff2"),
-    url(../webfonts/fa-solid-900.woff) format("woff"),
-    url(../webfonts/fa-solid-900.ttf) format("truetype"),
-    url(../webfonts/fa-solid-900.svg#fontawesome) format("svg");
+  src: url(../webfonts/fab-900.eot);
+  src: url(../webfonts/fab-900.eot?#iefix) format("embedded-opentype"),
+    url(../webfonts/fab-900.woff2) format("woff2"),
+    url(../webfonts/fab-900.woff) format("woff"),
+    url(../webfonts/fab-900.ttf) format("truetype"),
+    url(../webfonts/fab-900.svg#fontawesome) format("svg");
 }
 
 .fa,

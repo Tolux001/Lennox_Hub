@@ -7,7 +7,28 @@ emailLink.textContent = "[Email Protected]";
 
 pos.appendChild(emailLink);
 
-let dateTime = document.querySelector(".dateTime");
-let currentDate = new Date();
+const dateTime = document.querySelector(".dateTime");
+const todayDate = new Date();
+const daysOfWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
-dateTime.textContent = currentDate;
+const dayOfWeek = daysOfWeek[todayDate.getDay()];
+const day = todayDate.getDate();
+const month = todayDate.getMonth() + 1;
+const year = todayDate.getFullYear();
+
+dateTime.textContent = `${dayOfWeek}, ${day} - ${month} - ${year} `;
+
+const seconds = () => {
+  const dateSeconds = document.querySelector(".dateSeconds");
+  const todayDate = new Date();
+  dateSeconds.textContent = todayDate.getSeconds();
+};
+setInterval(seconds, 1000);
