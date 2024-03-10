@@ -24,11 +24,11 @@ const day = todayDate.getDate();
 const month = todayDate.getMonth() + 1;
 const year = todayDate.getFullYear();
 
-dateTime.textContent = `${dayOfWeek}, ${day} - ${month} - ${year} `;
+dateTime.textContent = `${dayOfWeek}, ${day} - ${month} - ${year}  `;
 
 const seconds = () => {
   const dateSeconds = document.querySelector(".dateSeconds");
   const todayDate = new Date();
-  dateSeconds.textContent = todayDate.getSeconds();
+  (dateSeconds.textContent = todayDate.getSeconds()), "s";
 };
 setInterval(seconds, 1000);
