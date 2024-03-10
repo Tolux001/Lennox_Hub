@@ -29,6 +29,6 @@ dateTime.textContent = `${dayOfWeek}, ${day} - ${month} - ${year}  `;
 const seconds = () => {
   const dateSeconds = document.querySelector(".dateSeconds");
   const todayDate = new Date();
-  (dateSeconds.textContent = todayDate.getSeconds()), "s";
+  dateSeconds.textContent = `${todayDate.getSeconds()}s`;
 };
 setInterval(seconds, 1000);
