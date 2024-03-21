@@ -1,10 +1,20 @@
+const pos = document.querySelector(".emailProtection");
+const emailReference = Array.from(
+  document.querySelectorAll(".emailProtections")
+);
+
 const email = "lennoxhub[at]hotmail[dot]com";
 const emailLink = document.createElement("a");
-const pos = document.querySelector(".emailProtection");
-
 emailLink.href = "mailto:" + email.replace("[at]", "@").replace("[dot]", ".");
 emailLink.textContent = "[Email Protected]";
 
+emailReference.forEach((e) => {
+  e.appendChild(emailLink);
+});
+document.querySelector(".emailProtections").appendChild(emailLink);
+document.querySelector(".emailProtections1").appendChild(emailLink);
+document.querySelector(".emailProtections2").appendChild(emailLink);
+document.querySelector(".emailProtections3").appendChild(emailLink);
 pos.appendChild(emailLink);
 
 const dateTime = document.querySelector(".dateTime");
